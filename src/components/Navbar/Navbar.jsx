@@ -10,8 +10,8 @@ function Navbar() {
                 <img src={logo} alt="" />
             </div>
             <div className="links"> 
-                <NavLink to="/" className='link'>Home</NavLink>
-                <NavLink to="/pokemon" className='link'>Pokemones</NavLink>
+                <NavLink to="/" className={({isActive}) => (isActive ? "active" : "inactive")}>Home</NavLink>
+                <NavLink to="/pokemon" className={({isActive}) => (isActive ? "active" : "inactive")}>Pokemones</NavLink>
             </div>
         </div>
     )

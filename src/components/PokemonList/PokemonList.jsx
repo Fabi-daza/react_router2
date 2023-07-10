@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import './PokemonList.css'
 
 const PokemonList = () => {
     const [pokemonList, setPokemonList] = useState([]);
@@ -24,7 +25,7 @@ const PokemonList = () => {
     }
   return (
 
-    <div>
+    <div className='container-pokemon-selector' >
         <select value={select} onChange={selectPokemon}>
             <option value=""> Selecciona el pokemon </option>
             {pokemonList.map((pokemon) =>  (
